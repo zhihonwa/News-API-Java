@@ -13,7 +13,7 @@ public class APIClient {
     private static Retrofit getRetrofit(){
         if(mRetrofit == null){
             mRetrofit = new Retrofit.Builder()
-                    .baseUrl("https://newsapi.org/")
+                    .baseUrl("https://newsapi.edmr.top/")
                     .addConverterFactory(GsonConverterFactory.create())
                     .build();
         }
